@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #3f3752;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services-box {
+    width: 350px;
+    height: 280px;
+    border-radius: 30px;
+    background-color: #51446e;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-box .icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--i);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.services-box:hover .icon {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    left: calc(50% - 40px);
+}
+
+.services-box .icon ion-icon {
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.services-box:hover ion-icon {
+    font-size: 2em;
+}
+
+.container .services-box .content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container .services-box:hover .content {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.container .services-box .content h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.container .services-box .content p {
+    font-weight: 300;
+    line-height: 1.5;
+}
